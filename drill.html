@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav mt-5">
+            <div class="container">
+                <div class="flex-nowrap">
+                    <div class="logo">
+                        <img src="img/logo.svg" alt="">
+                    </div>
+                    <div class="flex-nowrap row-reverse">
+                        <ul class="s-navbar">
+                            <li>
+                                <ul id="nav-list" class="nav-list">
+                                    <li><a href="index.html">Главная</a></li>
+                                    <li class="hover"><a href="equipment.html">Оборудование</a></li>
+                                    <div class="equip_catalog">
+                                        <a href="drill.html" class="equip_catalog__item">Бензиновый буровой станок
+                                            Pomeroy
+                                            EZ CoreD261-C D261-C</a>
+                                        <a href="pumps.html" class="equip_catalog__item">Помпа для колонкового бура
+                                            Pomeroy</a>
+                                        <a href="bit.html" class="equip_catalog__item">Коронка Pomeroy с внутренним
+                                            диаметром 1″ для бура</a>
+                                    </div>
+                                    <li><a href="about.html">О нас</a></li>
+                                    <li><a style="font-size: 19px;
+    font-weight: 400;" href="mailto:scienteq.pro@gmail.com">scienteq.pro@gmail.com</a></li>
+                                </ul>
+                            </li>
+                            <div id="burger" class="burger">
+                                <span></span>
+                            </div>
+
+                        </ul>
+                        <select name="" id="" class="select">
+                            <option value="">Ru</option>
+                            <option disabled style='color:#c4c4c4;' value="">Eng</option>
+                            <option disabled style='color:#c4c4c4;' value="">Chi</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+        </nav>
+        <main>
+            <div class="container">
+                <div class="d-flex justify-content-space-between flex-wrap">
+                    <div class=" col-6 main_img mt-5">
+                        <div class="mt-5 d-flex align-items-center justify-content-space-between align">
+                            <div class="arrow" id="prev">
+                                <img src="img/prev.png" alt="">
+                            </div>
+                            <div class="co">
+                                <img src="img/motodrill.png" alt="">
+                            </div>
+                            <div class="arrow" id="next">
+                                <img src="img/next.png" alt="">
+                            </div>
+                        </div>
+                        <div class="indicators d-flex">
+                            <span class="indicator active"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                            <span class="indicator"></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 offer">
+                        <h2>
+                            Переносной мотобур для отбора ориентированных образцов ПМБ-2б
+                        </h2>
+                        <div class="img_adaptive">
+                            <img src="img/motodrill.png" alt="">
+                        </div>
+                        
+                        <p class="inner">
+                            <span>(производство Россия)</span>
+                            Ручной мотобур ПМБ-2б предназначен для отбора геологических, геофизических, геохимических и прочих проб, в частности для
+                            отбора ориентированных палеомагнитных кернов стандартного диаметра.
+                            Для обеспечения максимальной надёжности в конструкции мотобура ПМБ-2б используется прямая передача крутящего момента на
+                            буровую коронку, а его автономность обеспечена двухтактным бензиновым двигателем 50 куб с всенаправленной подачей
+                            топлива для бурения под любым углом.
+                            В устройстве мотобура ПМБ-2б предусмотрен простой и надёжный тип крепления буровой коронки с открытым хвостовиком
+                            позволяющий менять бур без использования дополнительных инструментов.
+                        </p>
+                        <ul class="characteristics">
+                            <li class="characteristic"><span></span> Бензиновый двигатель 50 см3</li>
+                            <li class="characteristic"><span></span> Вес ~5 кг</li>
+                            <li class="characteristic"><span></span> Габариты 28 × 44 × 34 см.</li>
+                            <li class="characteristic"><span></span> Система охлаждения водяная.</li>
+
+                        </ul>
+                        <button class="btn btn-green" data-bs-toggle="modal" data-bs-target="#Ordering">Купить</button>
+                        <div class="modal fade" id="exampleModalToggle2" tabindex="-1" aria-labelledby="succesfulLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">
+                                            <img src="img/logo.svg" alt="">
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body mtb">
+                                        <h5>
+                                            Спасибо! <br>
+                                            Ваша заявка успешна принята!
+                                        </h5>
+                                        <p>Скоро с вами свяжется наш менеджер для уточнения деталей заказа</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button class="btn btn-green btn-modal" data-bs-toggle="modal">Закрыть</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="Ordering" aria-hidden="true"
+                            aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="exampleModalLabel">
+                                            <img src="img/logo.svg" alt="">
+                                        </h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <form class="modal-form">
+                                            <div class="mb-3">
+                                                <label for="recipient-name" class="col-form-label">Ваше имя<span
+                                                        class="red">*</span></label>
+                                                <input required type="text" placeholder="Как к вам обращаться?"
+                                                    class="form-control" id="recipient-name">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="recipient-phone" class="col-form-label">Номер телефона<span
+                                                        class="red">*</span></label>
+                                                <input required type="tel" placeholder="Введите ваш номер телефона"
+                                                    class="form-control" id="recipient-phone">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="message-text" class="form-label">Комментарий</label>
+                                                <textarea placeholder="Когда с вами удобнее связаться?"
+                                                    class="form-control" id="message-text" rows="3"></textarea>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <div id="">
+                                            <div class="agreement">
+                                                <label class="check">
+                                                    <input type="checkbox" name="" id="modal-form">
+                                                    <span class="checkbox"></span> Даю своё согласие на обработку
+                                                    <span>персональных данных</span>
+                                                </label>
+                                            </div>
+                                            <button class="btn btn-green btn-modal" id="submit" disabled
+                                                data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Оставить
+                                                заявку</button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </header>
+    
+    <section class="buy-with-this-product">
+        <div class="container">
+            <h2>
+                С этим товаром покупают :
+            </h2>
+            <div class="s-cards">
+                <div class="s-card">
+                    <div class="card_img">
+                        <img src="img/tank.jpg" alt="">
+                    </div>
+                    <div class="card_offer">
+                        <h3>
+                            Бак переносной с <br> ручным насосом
+                        </h3>
+                        <div class="text1">
+                            <p>10-литровый бак для воды <br> с ручным насосом.</p>
+                        </div>
+                        <form action="pumps.html">
+                            <button class="btn btn-green-border" data-bs-toggle="modal" data-bs-target="#Ordering">
+                                Купить
+                            </button>
+                        </form>
+                        
+                    </div>
+                </div>
+                <div class="s-card">
+                    <div class="card_img mr-82">
+                        <img src="img/bit.jpg" alt="">
+                    </div>
+                    <div class="card_offer">
+                        <h3>
+                            Безрезьбовая буровая коронка<br> с алмазным наконечником
+                        </h3>
+                        <div class="text1">
+                            <p>Буровая коронка из<br> высокопрочной, немагнитной<br> нержавеющей стали</p>
+                        </div>
+                        <form action="bit.html">
+                            <button class="btn btn-green-border" data-bs-toggle="modal" data-bs-target="#Ordering">
+                                Купить
+                            </button>
+                        </form>
+                        
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="question">
+        <div class="container">
+            <div class="question_content">
+                <div class="flex jcc">
+                    <div class="have_question">
+                        <h2>
+                            Остались вопросы?
+                        </h2>
+                        <div class="text1">
+                            <p>Закажите обратный звонок, с вами свяжется<br> менеджер и всё объяснит</p>
+                        </div>
+
+                    </div>
+                    <button class="btn btn-flex btn-green" data-bs-toggle="modal" data-bs-target="#Ordering">Заказать
+                        звонок</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="flex">
+                <div class="feedback_logo">
+                    <img src="img/logo.svg" alt="logo">
+                </div>
+                <div class="feedback">
+                    <ul class="bold">
+                        <li><a href="equipment.html">Оборудование</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="">Политика конфиденциальности</a></li>
+                    </ul>
+                    <ul class="light">
+                        <li><a href="about.html#contact">Контакты</a></li>
+                        <li><a href="mailto:scienteq.pro@gmail.com">scienteq.pro@gmail.com</a></li>
+                        <li><a href="">Youtube</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                ©2022ScientificEquipment
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+        integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
